@@ -8,7 +8,7 @@ class ModeloController:
 
         self.bp.route('/predict', methods=['POST'])(self.get_prediction)
 
-    def get_prediction(self):
+    def get_prediction(self, *args, **kwargs):
         modelo_data = request.json
 
         prediction = self.service.get_model_prediction(modelo_data)
