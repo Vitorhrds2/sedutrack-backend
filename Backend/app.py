@@ -46,7 +46,7 @@ application = create_app()
 
 @application.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('home\\ec2-user\\sedutrack-backend\\Backend\\templates\\index.html')
 
 if __name__ == '__main__':
     application.run(host='0.0.0.0', port=4000, debug=True)
