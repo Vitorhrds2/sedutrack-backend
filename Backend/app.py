@@ -20,7 +20,7 @@ def create_app():
     CORS(app, origins='*')
 
     # Defina o caminho correto do diretório de templates
-    app.template_folder = 'C:\\Users\\Inteli\\Downloads\\sedutrack-backend\\Backend\\templates'
+    app.template_folder = 'home\\ec2-user\\sedutrack-backend\\Backend\\templates'
 
     transportadora_controller = TransportadoraController()
     fornecedor_controller = FornecedorController()
