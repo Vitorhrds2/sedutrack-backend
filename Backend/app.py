@@ -19,9 +19,6 @@ def create_app():
     # Habilitar CORS
     CORS(app, origins='*')
 
-    # Defina o caminho correto do diretório de templates
-    app.template_folder = 'home\\ec2-user\\sedutrack-backend\\Backend\\templates'
-
     transportadora_controller = TransportadoraController()
     fornecedor_controller = FornecedorController()
     entrega_controller = EntregaController()
@@ -46,7 +43,7 @@ application = create_app()
 
 @application.route('/')
 def index():
-    return render_template('home\\ec2-user\\sedutrack-backend\\Backend\\templates\\index.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     application.run(host='0.0.0.0', port=4000, debug=True)
