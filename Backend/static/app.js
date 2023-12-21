@@ -1,8 +1,8 @@
 // Substitua as URLs pelos endpoints reais das suas APIs
-const avaliacoesEndpoint = 'http://localhost:4000/avaliacoes';
-const diretoriasEndpoint = 'http://localhost:4000/diretorias';
-const entregasEndpoint = 'http://localhost:4000/entregas';
-const transportadorasEndpoint = 'http://localhost:4000/transportadoras';
+const avaliacoesEndpoint = 'http://35.170.5.155:4000//avaliacoes';
+const diretoriasEndpoint = 'http://35.170.5.155:4000//diretorias';
+const entregasEndpoint = 'http://35.170.5.155:4000//entregas';
+const transportadorasEndpoint = 'http://35.170.5.155:4000//transportadoras';
 
 // Função para verificar se um valor é um objeto
 const isObject = (value) => typeof value === 'object' && value !== null;
