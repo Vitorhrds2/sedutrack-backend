@@ -13,11 +13,14 @@ from app.config.config import Config
 
 
 def create_app():
-    app = Flask(__name__, template_folder='templates')
+    app = Flask(__name__)
     app.config.from_object(Config)
 
     # Habilitar CORS
     CORS(app, origins='*')
+
+    # Defina o caminho correto do diretório de templates
+    app.template_folder = 'C:\\Users\\Inteli\\Downloads\\sedutrack-backend\\Backend\\templates'
 
     transportadora_controller = TransportadoraController()
     fornecedor_controller = FornecedorController()
