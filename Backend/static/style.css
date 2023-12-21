@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: content-box;
+}
+
+/* Estilos para a tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+thead {
+  background-color: #2d253f;
+  color: white;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  text-align: left;
+  min-width: 1vw; /* Set a minimum width for th and td */
+  max-width: 1vw;
+}
+
+td {
+  background-color: #f2f2f2;
+}
+
+.title {
+  text-align: center;
+}
+
+/* Estilos para a primeira linha da tabela (cabeçalho) */
+thead tr {
+  font-size: 1rem;
+}
+
+/* Estilos para as células do corpo da tabela */
+tbody tr {
+  font-size: 0.875rem;
+  background-color: #b0b0b0;
+}
+
+/* Estilos para células específicas, se necessário */
+/* Exemplo: Estilizando a célula da primeira coluna */
+td:first-child {
+  font-weight: bold;
+}
+
+button {
+  background-color: #ae1b1b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para tornar a tabela responsiva */
+@media (max-width: 768px) {
+  th, td {
+    padding: 0.75rem;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 100%; /* Set a minimum width for th and td */
+    max-width: 100%;
+    display: grid;
+    grid-column: 1 / 3;
+  }
+}
