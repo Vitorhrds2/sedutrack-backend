@@ -18,6 +18,7 @@ def create_app():
 
     # Habilitar CORS
     CORS(app, origins='*')
+    CORS(app, resources={r"/*": {"origins": "http://localhost:53301"}})
 
     transportadora_controller = TransportadoraController()
     fornecedor_controller = FornecedorController()
